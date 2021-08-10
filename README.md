@@ -3,7 +3,7 @@ Synthesized Rain dataset
 
 
 ## Pretrained model
->**Click to download [SyRa-GAN](https://drive.google.com/file/d/1TGqwSroSOsS77J2rQVGXfCpT6jcI5fuQ/view?usp=sharing)**<br>
+>**Click to download [pretrained SyRa-GAN](https://drive.google.com/file/d/1TGqwSroSOsS77J2rQVGXfCpT6jcI5fuQ/view?usp=sharing)**<br>
 
 
 ## SyRa dataset
