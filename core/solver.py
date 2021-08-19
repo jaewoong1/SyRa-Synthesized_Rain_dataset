@@ -227,17 +227,20 @@ def compute_g_loss(nets, args, x_gt, x_rain, y_gt, y_rain, l, z_trgs=None, masks
 
     if z_trgs is not None:
         s_trg2 = nets.mapping_network(z_trg2, l)
+        s_trg4 = nets.style_encoder(y_rain, l)
+        loss_map = torch.mean(torch.abs(s_trg2 - s_trg4))
     else:
         s_trg2 = nets.style_encoder(y_rain, l)
+        loss_map = 0
+        
     x_fake2 = nets.generator(x_gt, s_trg2, masks=masks)
     x_fake2 = x_fake2.detach()
 
     loss_ds = torch.mean(torch.abs(x_fake - x_fake2))
 
     masks = nets.fan.get_heatmap(y_gt) if args.w_hpf > 0 else None
-
+    
     x_fake3 = nets.generator(y_gt, s_trg2, masks=masks)
-    loss_rain = torch.mean(torch.abs(x_fake3 - y_rain))
 
     loss_NPMI = mutual_info(s_trg, s_trg2)
     s = s_trg2.clone()
@@ -247,12 +250,12 @@ def compute_g_loss(nets, args, x_gt, x_rain, y_gt, y_rain, l, z_trgs=None, masks
     loss_bias = torch.mean(torch.abs(x_ori - x_gt))
 
     loss = loss_adv + args.lambda_sty * loss_sty \
-        + loss_rain + args.lambda_NPMI * loss_NPMI + args.gt * loss_bias - args.lambda_ds * loss_ds
+        + loss_map + args.lambda_NPMI * loss_NPMI + args.gt * loss_bias - args.lambda_ds * loss_ds
 
     return loss, Munch(adv=loss_adv.item(),
                        sty=loss_sty.item(),
                        ds=loss_ds.item(),
-                       rain=loss_rain.item(),
+                       mapp=loss_map.item(),
                        bias=loss_bias.item(),
                        MI=loss_NPMI.item())
 
