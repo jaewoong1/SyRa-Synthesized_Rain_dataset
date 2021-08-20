@@ -1,4 +1,4 @@
-# SyRa-Synthezied_Rain_dataset(SyRa)
+# SyRa-Synthesized_Rain_dataset(SyRa)
 Synthesized Rain dataset
 
 
