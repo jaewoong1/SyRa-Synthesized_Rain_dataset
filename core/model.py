@@ -167,17 +167,18 @@ class Generator(nn.Module):
         feature = {}
         x = self.from_rgb(x)
         cache = {}
+        repeat_num = int(np.log2(self.img_size)) - 4
         i = 0
         for block in self.encode:
             if (masks is not None) and (x.size(2) in [32, 64, 128]):
                 cache[x.size(2)] = x
             x = block(x)
-            if i < 4:
+            if i < repeat_num:
                 feature[i] = copy.copy(x)
             i += 1
 
         for block in self.decode:
-            if i < 5:
+            if i < (repeat_num+1):
                 x = block(torch.cat([x, feature[i-1]], 1), s)
             else:
                 x = block(x, s)
