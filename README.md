@@ -1,6 +1,8 @@
 # SyRa : Synthesized rain image for deraining algorithms
 On this repository, SyRaGAN's code and instructions for synthesizing rain images are explained.
 
+![figure1](https://user-images.githubusercontent.com/54341727/130918704-2e9eeb97-442b-404e-8393-c439795b2597.png)
+
 ## Requirements
 Install the dependencies:
 ```
