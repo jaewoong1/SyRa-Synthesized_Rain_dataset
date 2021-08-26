@@ -32,7 +32,7 @@ The training image is used by concating each clear image and rain image.
 
 ## Synthesizing rain image
 ```
-python main.py --img_size 256 --mode syn --checkpoint_dir expr/checkpoint/SyRa --out_dir expr/result --data **name_of_your_data**
+python main.py --img_size 256 --mode syn --checkpoint_dir expr/checkpoint/SyRa --out_dir expr/result --data name_of_your_data
 ```
 
 ## References
