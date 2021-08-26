@@ -3,7 +3,8 @@ On this repository, SyRaGAN's code and instructions for synthesizing rain images
 
 ## Requirements
 Install the dependencies:
-```bash
+```
+bash
 conda create -n SyRaGAN python=3.6.7
 conda activate SyRaGAN
 conda install -y pytorch=1.4.0 torchvision=0.5.0 cudatoolkit=10.0 -c pytorch
