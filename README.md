@@ -31,6 +31,9 @@ The training image is used by concating each clear image and rain image.
 ## Training SyRaGAN
 
 ## Synthesizing rain image
+Put clear images in the following location. `./asset/name_of_your_data
+Put checkpoint file in the following location. `./expr/checkpoint/SyRa`
+
 ```
 python main.py --img_size 256 --mode syn --checkpoint_dir expr/checkpoint/SyRa --out_dir expr/result --data name_of_your_data
 ```
