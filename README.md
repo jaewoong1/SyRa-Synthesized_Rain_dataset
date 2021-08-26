@@ -29,6 +29,7 @@ The training image is used by concating each clear image and rain image.
 
 ## Training SyRaGAN
 
+## Synthesizing rain image
 
 
 ## References
