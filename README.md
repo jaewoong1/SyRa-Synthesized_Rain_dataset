@@ -31,7 +31,9 @@ The training image is used by concating each clear image and rain image.
 ## Training SyRaGAN
 
 ## Synthesizing rain image
-
+```
+python main.py --img_size 256 --mode syn --checkpoint_dir expr/checkpoint/SyRa --out_dir expr/result --data **name_of_your_data**
+```
 
 ## References
 [1] Yang, Wenhan, et al. "Deep joint rain detection and removal from a single image." Proceedings of the IEEE conference on computer vision and pattern recognition. 2017.
