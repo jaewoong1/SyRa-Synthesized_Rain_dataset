@@ -27,6 +27,9 @@ pip install tqdm
 As training data, Rain100L [1], Rain100H [1], Rain800 [2], Rain1200 [3], Rain1400 [4], and SPA-data [5] were used.
 The training image is used by concating each clear image and rain image.
 
+## Training SyRaGAN
+
+
 
 ## References
 [1] Yang, Wenhan, et al. "Deep joint rain detection and removal from a single image." Proceedings of the IEEE conference on computer vision and pattern recognition. 2017.
