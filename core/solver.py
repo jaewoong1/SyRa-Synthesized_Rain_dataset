@@ -88,8 +88,8 @@ class Solver(nn.Module):
             size = torch.empty(args.batch_size)
             l = torch.ones_like(size).type(torch.long).to('cuda')
 
-            x_gt, x_rain = inputs.x_src[:, :, :, :256], inputs.x_src[:, :, :, 256:]
-            y_gt, y_rain = inputs.x_ref[:, :, :, :256], inputs.x_ref[:, :, :, 256:]
+            x_gt, x_rain = inputs.x_src[:, :, :, :args.img_size], inputs.x_src[:, :, :, args.img_size:]
+            y_gt, y_rain = inputs.x_ref[:, :, :, :args.img_size], inputs.x_ref[:, :, :, args.img_size:]
 
             z_trg, z_trg2 = inputs.z_trg, inputs.z_trg2
 
