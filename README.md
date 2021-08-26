@@ -19,8 +19,8 @@ pip install tqdm
 
 
 ## SyRa dataset
->**Click to download [SyRa](https://drive.google.com/drive/folders/1SSLpAKuW6U2gPk6601agOMNeA5Kx5_zf?usp=sharing)**<br>
->**Click to download [SyRa-HQ](https://drive.google.com/drive/folders/1PUXDTdf0vGeZaH7sbc9xXCCTWM7ouwZ_?usp=sharing)**<br>
+>**Click to download [SyRa](https://drive.google.com/drive/folders/1SSLpAKuW6U2gPk6601agOMNeA5Kx5_zf?usp=sharing)**<br> : Trainset - 10K clear image and 50K synthesized rain image , Testset - 1K clear image and 5K synthesized rain image
+>**Click to download [SyRa-HQ](https://drive.google.com/drive/folders/1PUXDTdf0vGeZaH7sbc9xXCCTWM7ouwZ_?usp=sharing)**<br> : Trainset - 1K clear image and 5K synthesized rain image , Testset - 100 clear image and 500 synthesized rain image
 
 ## Training dataset
 As training data, Rain100L [1], Rain100H [1], Rain800 [2], Rain1200 [3], Rain1400 [4], and SPA-data [5] were used.
@@ -31,6 +31,9 @@ The training image is used by concating each clear image and rain image.
 [1] Yang, Wenhan, et al. "Deep joint rain detection and removal from a single image." Proceedings of the IEEE conference on computer vision and pattern recognition. 2017.
 
 [2] Zhang, He, Vishwanath Sindagi, and Vishal M. Patel. "Image de-raining using a conditional generative adversarial network." IEEE transactions on circuits and systems for video technology 30.11 (2019): 3943-3956.
+
 [3] Zhang, He, and Vishal M. Patel. "Density-aware single image de-raining using a multi-stream dense network." Proceedings of the IEEE conference on computer vision and pattern recognition. 2018.
+
 [4] Fu, Xueyang, et al. "Removing rain from single images via a deep detail network." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2017.
+
 [5] Wang, Tianyu, et al. "Spatial attentive single-image deraining with a high quality real rain dataset." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2019.
