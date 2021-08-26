@@ -40,7 +40,7 @@ Put checkpoint file in the following location. `./expr/checkpoint/SyRa`
 Run
 
 ```
-python main.py --img_size 256 --mode syn --checkpoint_dir expr/checkpoint/SyRa --out_dir expr/result --data name_of_your_data
+python main.py --img_size 256 --mode syn --checkpoint_dir expr/checkpoint/SyRa --out_dir expr/result --data name_of_your_data --resume_iter 100000
 ```
 
 5 syntheiszed rain images will be created for each clear image in `./expr/result`
