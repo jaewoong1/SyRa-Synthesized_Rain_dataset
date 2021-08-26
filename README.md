@@ -35,7 +35,7 @@ Divide your training images into the following locations : `./data/rains/train/A
 
 **Example of training image :**<br>
 
-![raind4697](https://user-images.githubusercontent.com/54341727/130947400-d35d3fe4-7903-4786-b232-22d6d270946d.jpg){: width="600" height="300"}
+![raind4697](https://user-images.githubusercontent.com/54341727/130947400-d35d3fe4-7903-4786-b232-22d6d270946d.jpg)
 
 Run
 ```
