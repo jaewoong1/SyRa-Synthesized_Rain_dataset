@@ -1,7 +1,7 @@
 # Pytorch Implementation - SyRaGAN
 **SyRa : Synthesized rain image for deraining algorithms**<br>
 
-Jaewoong Choi, [Daeha Kim](https://github.com/kdhht2334), [Sanghyuk Lee](https://github.com/shlee625), [Byung Cheol Song](https://scholar.google.com/citations?user=yo-cOtMAAAAJ&hl=ko&oi=sra)
+Jaewoong Choi,  [Daeha Kim](https://github.com/kdhht2334),  [Sanghyuk Lee](https://github.com/shlee625),  [Byung Cheol Song](https://scholar.google.com/citations?user=yo-cOtMAAAAJ&hl=ko&oi=sra)
 
 On this repository, SyRaGAN's code and instructions for synthesizing rain images are explained.
 
