@@ -37,17 +37,18 @@ Divide your training images into the following locations : `./data/rains/train/A
 
 ![raind4697](https://user-images.githubusercontent.com/54341727/130947400-d35d3fe4-7903-4786-b232-22d6d270946d.jpg)
 
-Run
+**Run**<br>
+
 ```
 python main.py --img_size 256 --mode train --checkpoint_dir expr/checkpopint/SyRa --resume_iter 0 --gpu 0
-
+```
 
 ## Synthesizing rain image
 Put clear images in the following location. `./asset/name_of_your_data`
 
 Put checkpoint file in the following location. `./expr/checkpoint/SyRa`
 
-Run
+**Run**<br>
 
 ```
 python main.py --img_size 256 --mode syn --checkpoint_dir expr/checkpoint/SyRa --out_dir expr/result --data name_of_your_data --resume_iter 100000
