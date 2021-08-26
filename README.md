@@ -31,6 +31,14 @@ As training data, Rain100L [1], Rain100H [1], Rain800 [2], Rain1200 [3], Rain140
 The training image is used by concating each clear image and rain image.
 
 ## Training SyRaGAN
+Divide your training images into the following locations : `./data/rains/train/A` `./data/rains/train/B`
+**Example of training image :**<br>
+![raind4697](https://user-images.githubusercontent.com/54341727/130947400-d35d3fe4-7903-4786-b232-22d6d270946d.jpg)
+
+Run
+```
+python main.py --img_size 256 --mode train --checkpoint_dir expr/checkpopint/SyRa --resume_iter 0 --gpu 0
+
 
 ## Synthesizing rain image
 Put clear images in the following location. `./asset/name_of_your_data`
