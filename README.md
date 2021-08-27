@@ -48,14 +48,14 @@ python main.py --img_size 256 --mode train --checkpoint_dir expr/checkpopint/SyR
 ```
 
 ## Synthesizing rain image
-Put clear images in the following location. `./asset/name_of_your_data`
+Put clear images in the following location. `./asset/folder_of_your_data`
 
 Put checkpoint file in the following location. `./expr/checkpoint/SyRa`
 
 **Run**<br>
 
 ```
-python main.py --img_size 256 --mode syn --checkpoint_dir expr/checkpoint/SyRa --out_dir expr/result --data name_of_your_data --resume_iter 100000
+python main.py --img_size 256 --mode syn --checkpoint_dir expr/checkpoint/SyRa --out_dir expr/result --data folder_of_your_data --resume_iter 100000
 ```
 
 5 syntheiszed rain images will be created for each clear image in `./expr/result`
