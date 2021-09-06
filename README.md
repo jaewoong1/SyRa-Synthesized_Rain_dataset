@@ -48,7 +48,7 @@ python main.py --img_size 256 --mode train --checkpoint_dir expr/checkpopint/SyR
 ```
 
 ## Synthesizing rain image
-Put clear images in the following location. `./asset/folder_of_your_data`
+Put clear images in the following location. `./asset/folder_of_your_data/folder_of_your_data`
 
 Put checkpoint file in the following location. `./expr/checkpoint/SyRa`
 
