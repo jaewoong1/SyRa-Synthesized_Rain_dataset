@@ -1,5 +1,5 @@
 # Pytorch Implementation - SyRaGAN
-<span style="color:red">Further improvements in progress!</span>
+<font color="red">Further improvements in progress!</font>
 
 **SyRa : Synthesized rain image for deraining algorithms**<br>
 
