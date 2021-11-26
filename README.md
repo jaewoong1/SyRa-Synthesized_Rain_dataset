@@ -29,6 +29,7 @@ pip install tqdm
 
 
 ## SyRa dataset
+>**Further improvements in progress!**<br>
 >**Click to download [SyRa](https://drive.google.com/drive/folders/1SSLpAKuW6U2gPk6601agOMNeA5Kx5_zf?usp=sharing)**<br> : Trainset - 10K clear image and 50K synthesized rain image , Testset - 1K clear image and 5K synthesized rain image
 
 >**Click to download [SyRa-HQ](https://drive.google.com/drive/folders/1PUXDTdf0vGeZaH7sbc9xXCCTWM7ouwZ_?usp=sharing)**<br> : Trainset - 1K clear image and 5K synthesized rain image , Testset - 100 clear image and 500 synthesized rain image
