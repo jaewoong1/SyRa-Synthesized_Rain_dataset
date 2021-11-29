@@ -1,6 +1,6 @@
 # Pytorch Implementation - SyRaGAN
 
->**Further improvements in progress!**<br>
+>**Further improvements in progress!     Will update until 2021. 12. 15**<br>
 
 **SyRa : Synthesized rain image for deraining algorithms**<br>
 
