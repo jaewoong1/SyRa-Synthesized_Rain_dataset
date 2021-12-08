@@ -1,7 +1,5 @@
 # Pytorch Implementation - SyRaGAN
 
->**Further improvements in progress!     Will update until 2021. 12. 15**<br>
-
 **SyRa : Synthesized rain image for deraining algorithms**<br>
 
 [Jaewoong Choi](https://github.com/jaewoong1),  [Daeha Kim](https://github.com/kdhht2334),  [Sanghyuk Lee](https://github.com/shlee625),  [Byung Cheol Song](https://scholar.google.com/citations?user=yo-cOtMAAAAJ&hl=ko&oi=sra)
