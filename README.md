@@ -1,5 +1,7 @@
 # Pytorch Implementation - SyRaGAN
 
+>**Update completion**<br>
+
 **SyRa : Synthesized rain image for deraining algorithms**<br>
 
 [Jaewoong Choi](https://github.com/jaewoong1),  [Daeha Kim](https://github.com/kdhht2334),  [Sanghyuk Lee](https://github.com/shlee625),  [Byung Cheol Song](https://scholar.google.com/citations?user=yo-cOtMAAAAJ&hl=ko&oi=sra)
@@ -27,7 +29,6 @@ pip install tqdm
 
 
 ## SyRa dataset
->**Further improvements in progress!**<br>
 >**Click to download [SyRa](https://drive.google.com/drive/folders/1SSLpAKuW6U2gPk6601agOMNeA5Kx5_zf?usp=sharing)**<br> : Trainset - 10K clear image and 50K synthesized rain image , Testset - 1K clear image and 5K synthesized rain image
 
 >**Click to download [SyRa-HQ](https://drive.google.com/drive/folders/1PUXDTdf0vGeZaH7sbc9xXCCTWM7ouwZ_?usp=sharing)**<br> : Trainset - 1K clear image and 5K synthesized rain image , Testset - 100 clear image and 500 synthesized rain image
