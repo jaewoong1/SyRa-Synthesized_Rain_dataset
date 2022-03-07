@@ -143,10 +143,14 @@ class Generator(nn.Module):
             dim_out = min(dim_in*2, max_conv_dim)
             self.encode.append(
                 ResBlk(dim_in, dim_out, normalize=True, downsample=True))
-
-            self.decode.insert(
-                0, AdainResBlk(dim_out*2, dim_in, style_dim,
-                                w_hpf=w_hpf, upsample=True))
+            if i == 0:
+                self.decode.insert(
+                    0, AdainResBlk(dim_out*2, dim_in, style_dim,
+                                   w_hpf=w_hpf, upsample=True))
+            else:
+                self.decode.insert(
+                    0, AdainResBlk(dim_out, dim_in, style_dim,
+                                    w_hpf=w_hpf, upsample=True))
             # stack-like
             dim_in = dim_out
 
@@ -164,7 +168,6 @@ class Generator(nn.Module):
 
     def forward(self, x, s, masks=None):
         x_copy = copy.deepcopy(x)
-        feature = {}
         x = self.from_rgb(x)
         cache = {}
         repeat_num = int(np.log2(self.img_size)) - 4
@@ -173,13 +176,12 @@ class Generator(nn.Module):
             if (masks is not None) and (x.size(2) in [32, 64, 128]):
                 cache[x.size(2)] = x
             x = block(x)
-            if i < repeat_num:
-                feature[i] = copy.copy(x)
+            if i == 0:
+                feature = copy.copy(x)
             i += 1
-
         for block in self.decode:
-            if i < (repeat_num+1):
-                x = block(torch.cat([x, feature[i-1]], 1), s)
+            if i == 1:
+                x = block(torch.cat([x, feature], 1), s)
             else:
                 x = block(x, s)
             if (masks is not None) and (x.size(2) in [32, 64, 128]):
