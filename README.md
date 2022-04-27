@@ -2,7 +2,7 @@
 
 >**Update completion**<br>
 
-**SyRa : Synthesized rain image for deraining algorithms**<br>
+**SyRa : Synthesized rain image for deraining algorithms**<br> [Paper](https://www.sciencedirect.com/science/article/pii/S0925231222004040)
 
 [Jaewoong Choi](https://github.com/jaewoong1),  [Daeha Kim](https://github.com/kdhht2334),  [Sanghyuk Lee](https://github.com/shlee625),  [Byung Cheol Song](https://scholar.google.com/citations?user=yo-cOtMAAAAJ&hl=ko&oi=sra)
 
