@@ -1,4 +1,4 @@
-# Pytorch Implementation - SyRaGAN
+# Pytorch Implementation - SyRaGAN, NeuroComputing 2022
 
 >**Update completion**<br>
 
