@@ -1,5 +1,5 @@
-# Pytorch Implementation - SyRaGAN, NeuroComputing 2022
-
+# SyRaGAN, NeuroComputing 2022
+Pytorch implementation
 >**Update completion**<br>
 
 **SyRa : Synthesized rain image for deraining algorithms** [Paper](https://www.sciencedirect.com/science/article/pii/S0925231222004040)
