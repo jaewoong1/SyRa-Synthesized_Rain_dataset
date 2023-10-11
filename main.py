@@ -170,10 +170,6 @@ if __name__ == '__main__':
     parser.add_argument('--data', type=str, default='SyRa',
                         help='A name of dataset ex: cityscape, SyRa, VisDrone')
 
-    # face alignment
-    parser.add_argument('--wing_path', type=str, default='expr/checkpoints/wing.ckpt')
-    parser.add_argument('--lm_path', type=str, default='expr/checkpoints/celeba_lm_mean.npz')
-
     # step size
     parser.add_argument('--print_every', type=int, default=10)
     parser.add_argument('--sample_every', type=int, default=10000)
