@@ -24,7 +24,7 @@ def main(args):
     print(args)
     cudnn.benchmark = True
     torch.manual_seed(args.seed)
-    args.rain_dir = os.path.join(args.rain_dir, args.data)
+    #args.rain_dir = os.path.join(args.rain_dir, args.data)
     args.out_dir = os.path.join(args.out_dir, args.data)
     solver = Solver(args)
 
